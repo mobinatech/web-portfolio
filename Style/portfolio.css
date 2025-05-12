@@ -3,10 +3,18 @@
 
 .open-sans-normal {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-optical-sizing:auto;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+  }
+
+  /* Header */
+
+  .header{
+    background-image: url('../image/developer.png'), url('../image/header_bg.png');
+    background-repeat: no-repeat;
+    background-position:top left, right bottom;
   }
 
 /* Nav styles */
@@ -21,6 +29,9 @@ nav{
 }
 
 /* Shared style */
+.secondary-bg{
+    background-color: #FFF8F3;
+}
 
 .logo-color{
 
@@ -35,14 +46,25 @@ nav{
     font-weight: bold;
     font-size: 20px;
     color: #FFFFFF;
-    padding: 18px 35px;
+    padding: 15px 30px;
     border-radius: 5px;
     border: none;
 }
 
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
 
+}
+.section-description{
+    font-size: 18px;
+    color: #757575;
+}
 
-
+.text-center{
+    text-align: center;
+}
 
 nav ul{
     display: flex;
@@ -74,7 +96,7 @@ font-size: 45px;
 font-weight: 600;
 }
 .banner-title{
-font-size: 60px;
+font-size: 50px;
 font-weight: bold;
 
 
@@ -82,4 +104,48 @@ font-weight: bold;
 .banner-profile-pic{
 width: 580px;
 
+}
+
+/* main styles */
+
+main{
+    max-width: 940px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+
+/* about styles */
+.about{
+    border-radius: 10px;
+    padding: 100px 100px;
+    text-align: center;
+   
+}
+
+.about-items{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.item-description{
+    font-weight: 600;
+}
+
+
+/*  skills section styles */
+
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+
+    padding: 15px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.07);
 }
