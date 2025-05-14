@@ -12,9 +12,10 @@
   /* Header */
 
   .header{
-    background-image: url('../image/developer.png'), url('../image/header_bg.png');
+    background-image: url('../image/header_bg.png'), url('../image/developer.png');
     background-repeat: no-repeat;
-    background-position:top left, right bottom;
+    background-position:bottom right, top left;
+    
   }
 
 /* Nav styles */
@@ -50,6 +51,8 @@ nav{
     border-radius: 5px;
     border: none;
 }
+
+
 
 .section-title{
     font-size: 35px;
