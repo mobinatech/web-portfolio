@@ -45,9 +45,9 @@ nav{
 
     background-color: #FD6E0A;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
     color: #FFFFFF;
-    padding: 15px 30px;
+    padding: 12px 35px;
     border-radius: 5px;
     border: none;
 }
@@ -99,7 +99,7 @@ font-size: 45px;
 font-weight: 600;
 }
 .banner-title{
-font-size: 50px;
+font-size: 37px;
 font-weight: bold;
 
 
@@ -201,7 +201,18 @@ footer{
    
 }
 
-.social-links a{
+footer input[type="text"], footer input[type="email"], footer textarea{
+
+    height:64px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+}
+  .social-links a{
     margin-right: 25px;
 }
 
@@ -209,7 +220,7 @@ footer{
     font-size: 11px;
 }
 
-.Contact input[type="text"], .Contact input[type="email"],
+/* .Contact input[type="text"], .Contact input[type="email"],
  textarea{
     display: block;
     margin-bottom: 25px;
@@ -219,4 +230,27 @@ footer{
     background-color: #fff;
     border: 0;
     width: 100%;
+}    */
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px){
+    .skills-container, .resume-container, footer{
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+
+    }
+    
+    .footer-column{
+        width: 100%;
+    }
+
+   
+ footer input[type="text"], footer input[type="email"], footer textarea{
+            width: calc(100% - 40px);
+        }
+    
 }
